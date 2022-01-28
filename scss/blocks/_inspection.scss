@@ -1,0 +1,102 @@
+.inspection{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 42px 0;
+    padding-left: 35px;
+    background-color: #FFFFFF;
+    margin-bottom: 127px;
+    &__picture{
+        //margin: 42px 0;
+        //margin-left: 35px;
+        margin-right: 67px;
+        &__img{
+            display: flex;
+        }
+    }
+    &__description{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        &__title{
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: #333333;
+            margin: 0 0 18px 0;
+        }
+        &__text{
+            max-width: 492px;
+            width: 100%;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #949494;
+            margin: 0 0 9px 0;
+        }
+        &__button{
+            margin-top: 34px;
+        }
+    }
+}
+
+.button1{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 36px 15px 63px;
+    background-color: #FFBD54;
+    margin-right: 21px;
+    border-radius: 3px;
+    position: relative;
+    transition: all 0.14s ease-in-out;
+    &:hover{
+        background-color: #333333;
+        color: #FFBD54;
+    }
+    &:active{
+        opacity: 0.6;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        background: url("../images/cost.svg") no-repeat;
+        width: 21px;
+        height: 21px;
+        left: 35px;
+        top: 15px;
+    }
+}
+
+.button2{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 37px 15px 64px;
+    background-color: #333333;
+    border-radius: 3px;
+    position: relative;
+    transition: all 0.14s ease-in-out;
+    &:hover{
+        background-color: #FFBD54;
+        color: #333333;
+    }
+    &:active{
+        opacity: 0.6;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        background: url("../../images/document\ 1.svg") no-repeat;
+        width: 21px;
+        height: 21px;
+        left: 35px;
+        top: 15px;
+    }
+}

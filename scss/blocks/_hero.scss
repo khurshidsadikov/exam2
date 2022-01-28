@@ -1,0 +1,77 @@
+.hero{
+    margin: 0 auto;
+    //margin-right: 97px;
+    padding-left: 735px;
+    margin-top: 153px;
+    margin-bottom: 370px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        background: url("../images/animal.svg") no-repeat;
+        width: 870px;
+        height: 834px;
+        left: -81px;
+        top: -250px;
+        z-index: -5;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        background: url("../images/PetToti.svg") no-repeat;
+        width: 350px;
+        height: 430px;
+        right: -200px;
+        top: 250px;
+    }
+    &__title{
+        max-width: 608px;
+        width: 100%;
+        margin: 0 0 29px 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 70px;
+        line-height: 64px;
+        color: #333333;
+        &__extra{
+            color: #78C0DE;
+        }
+    }
+    &__description{
+        max-width: 495px;
+        width: 100%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        color: #949494;
+        overflow: hidden;
+        margin-bottom: 38px;
+    }
+    &__button{
+        max-width: 181px;
+        width: 100%;
+        padding: 15px 47px;
+        border: 1px solid wheat;
+        background-color: #333333;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.14s ease-in-out;
+        &:hover{
+            background-color: #FFBD54;
+            color: #333333;
+        }
+        &:active{
+            opacity: 0.6;
+        }
+        &__link{
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+            color: #FFFFFF;
+            z-index: 16;
+        }
+    }
+}
